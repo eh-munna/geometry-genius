@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required Head Elements -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page Title -->
+    <title>Assignment 5 || Emran || Geometry Genius</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Flowbite Link -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- body-start -->
+  <body>
+    <!-- header-start -->
+    <header>
+      <!-- container-start -->
+      <div class="container mx-auto px-2">
+        <!-- navbar-start -->
+
+        <nav
+          class="my-3 md:my-9 py-1 px-2 md:py-3 md:px-4 bg-[#e8f4fc] rounded"
+        >
+          <div class="flex flex-wrap items-center justify-between">
+            <a href="#" class="items-center">
+              <p class="text-[#3c3f40] font-bold text-xl md:text-3xl">
+                Interactive
+              </p>
+              <p class="text-[#676c6f] text-lg md:text-2xl">Geometry Genius</p>
+            </a>
+            <button
+              data-collapse-toggle="navbar-dropdown"
+              type="button"
+              class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-dropdown"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+              <ul
+                class="flex flex-col p-4 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:border-gray-700"
+              >
+                <li>
+                  <a
+                    href="index.html"
+                    class="block py-1 px-2 text-center md:text-left md:py-2 md:px-4 text-white bg-[#1090D8] rounded font-bold"
+                    aria-current="page"
+                    >Home</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- navbar-end -->
+      </div>
+      <!-- container-end -->
+    </header>
+    <!-- header-end -->
+    <!-- main-content-start -->
+    <main>
+      <div class="container mx-auto px-2">
+        <!-- question-answer-start -->
+
+        <div
+          id="accordion-color"
+          data-accordion="collapse"
+          data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white"
+        >
+          <h2 id="accordion-color-heading-1">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+              data-accordion-target="#accordion-color-body-1"
+              aria-expanded="true"
+              aria-controls="accordion-color-body-1"
+            >
+              <span>What is DOM and what is the purpose of DOM?</span>
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 rotate-180 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-color-body-1"
+            class="hidden"
+            aria-labelledby="accordion-color-heading-1"
+          >
+            <div
+              class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
+            >
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                DOM stands for Document Object Model. It is a method to make the web page interactive. We can manipulate any HTML element as well can style them with the help of DOM.
+              </p>
+              
+            </div>
+          </div>
+          <h2 id="accordion-color-heading-2">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+              data-accordion-target="#accordion-color-body-2"
+              aria-expanded="false"
+              aria-controls="accordion-color-body-2"
+            >
+              <span
+                >How will you select HTML elements using DOM? Name the DOM
+                methods?</span
+              >
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-color-body-2"
+            class="hidden"
+            aria-labelledby="accordion-color-heading-2"
+          >
+            <div
+              class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700"
+            >
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                We can select the HTML using for DOM manipulation using different methods. Such as
+                <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                  <li><p class="text-blue-600">document.getElementsByTagName()</p></li>
+                  <li><p class="text-blue-600">document.getElementsByClassName()</p></li>
+                  <li><p class="text-blue-600">document.getElementById()</p></li>
+                  <li><p class="text-blue-600">document.querySelector()</p></li>
+                  <li><p class="text-blue-600">document.querySelectorAll()</p></li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <h2 id="accordion-color-heading-3">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+              data-accordion-target="#accordion-color-body-3"
+              aria-expanded="false"
+              aria-controls="accordion-color-body-3"
+            >
+              <span>What is event bubble?</span>
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-color-body-3"
+            class="hidden"
+            aria-labelledby="accordion-color-heading-3"
+          >
+            <div
+              class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700"
+            >
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                The Event bubbling is a kind of event propagation. This event triggers the child elements of the parent elements in a HTML file. Then from the targeted element it consecutively triggers the parent element of the target element then go upwards until it reach the highest parent.
+              </p>
+            </div>
+          </div>
+
+          <h2 id="accordion-color-heading-4">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+              data-accordion-target="#accordion-color-body-4"
+              aria-expanded="false"
+              aria-controls="accordion-color-body-4"
+            >
+              <span>What is a callback function and why will you use it?</span>
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-color-body-4"
+            class="hidden"
+            aria-labelledby="accordion-color-heading-4"
+          >
+            <div
+              class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700"
+            >
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                A callback function is a function which is called by another function. In other words, it is accessible in another function. Sometimes we need to some repetitive task in some other functions then in that case we will make a common function for those same task, and will call that common function inside function the where we have our repetitive tasks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- main-content-end -->
+    <!-- Flowbite JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+    <!-- custom JS -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/card.js"></script>
+  </body>
+  <!-- body-end -->
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required Head Elements -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page Title -->
+    <title>Assignment 5 || Emran || Geometry Genius</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Flowbite Link -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- body-start -->
+  <body>
+    <!-- header-start -->
+    <header>
+      <!-- container-start -->
+      <div class="container mx-auto px-2">
+        <!-- navbar-start -->
+
+        <nav
+          class="my-3 md:my-9 py-1 px-2 md:py-3 md:px-4 bg-[#e8f4fc] rounded"
+        >
+          <div class="flex flex-wrap items-center justify-between">
+            <a href="#" class="items-center">
+              <p class="text-[#3c3f40] font-bold text-xl md:text-3xl">
+                Interactive
+              </p>
+              <p class="text-[#676c6f] text-lg md:text-2xl">Geometry Genius</p>
+            </a>
+            <button
+              data-collapse-toggle="navbar-dropdown"
+              type="button"
+              class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-dropdown"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+              <ul
+                class="flex flex-col p-4 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:border-gray-700"
+              >
+                <li>
+                  <a
+                    href="blog.html"
+                    class="block py-1 px-2 text-center md:text-left md:py-2 md:px-4 text-white bg-[#1090D8] rounded font-bold"
+                    aria-current="page"
+                    >Blog</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- navbar-end -->
+      </div>
+      <!-- container-end -->
+    </header>
+    <!-- header-end -->
+
+    <!-- main-content-start -->
+    <main>
+      <!-- container-start -->
+      <div class="container mx-auto px-2">
+        <!-- card-items-start -->
+        <div class="card-items grid grid-cols-1 md:grid-cols-5 gap-3 mb-3">
+          <!-- triangle-start -->
+          <div
+            id="triangle"
+            class="card-item text-center bg-white border border-[#1111111A] rounded-lg mx-auto py-6 px-5 order-1"
+          >
+            <img
+              class="mx-auto max-w-full h-48"
+              src="./assets/images/triangle.png"
+              alt=""
+            />
+
+            <h5
+              id="triangle-shape"
+              class="mt-3 md:mt-6 text-2xl font-bold text-[#414141]"
+            >
+              Triangle
+            </h5>
+
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Area (A) = 0.5 x b x h
+            </p>
+            <!-- card-calculation-start -->
+            <div class="card-calculation space-y-6 px-3">
+              <div class="data-input flex justify-between mt-2 md:mt-4">
+                <div class="inline-flex items-center">
+                  <input
+                    type="text"
+                    name=""
+                    id="triangle-base"
+                    placeholder="b"
+                    class="rounded border border-transparent bg-[#F1F1F1] placeholder-[#414141] mx-2 w-full"
+                  />cm
+                </div>
+                <div class="inline-flex items-center">
+                  <input
+                    type="text"
+                    name=""
+                    id="triangle-height"
+                    placeholder="h"
+                    class="rounded border border-transparent bg-[#F1F1F1] placeholder-[#414141] mx-2 w-full"
+                  />cm
+                </div>
+              </div>
+            </div>
+            <!-- card-calculation-end -->
+            <!-- card-button-start -->
+            <div class="flex justify-center items-center mt-3 md:mt-8">
+              <button
+                id="btn-triangle"
+                class="w-full items-center px-3 py-4 text-sm md:text-xl font-bold text-center text-white bg-[#1090D8] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+              >
+                Calculate
+              </button>
+            </div>
+            <!-- card-button-end -->
+          </div>
+          <!-- triangle-end -->
+
+          <!-- rectangle-start -->
+          <div
+            id="rectangle"
+            class="card-item text-center bg-white border border-[#1111111A] rounded-lg mx-auto py-6 px-5 order-2"
+          >
+            <img
+              class="mx-auto max-w-full h-48"
+              src="./assets/images/rectangle.png"
+              alt=""
+            />
+
+            <h5
+              id="rectangle-shape"
+              class="mt-3 md:mt-6 text-2xl font-bold tracking-tight text-[#414141]"
+            >
+              Rectangle
+            </h5>
+
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Area (A) = w x l
+            </p>
+            <!-- card-calculation-start -->
+            <div class="card-calculation space-y-6 px-3">
+              <div class="data-input flex justify-between mt-2 md:mt-4">
+                <div class="inline-flex items-center">
+                  <input
+                    type="text"
+                    name=""
+                    id="rectangle-width"
+                    placeholder="w"
+                    class="rounded border border-transparent bg-[#F1F1F1] placeholder-[#414141] mx-2 w-full"
+                  />cm
+                </div>
+                <div class="inline-flex items-center">
+                  <input
+                    type="text"
+                    name=""
+                    id="rectangle-length"
+                    placeholder="l"
+                    class="rounded border border-transparent bg-[#F1F1F1] placeholder-[#414141] mx-2 w-full"
+                  />cm
+                </div>
+              </div>
+            </div>
+            <!-- card-calculation-end -->
+            <!-- card-button-start -->
+            <div class="flex justify-center items-center mt-3 md:mt-8">
+              <button
+                id="btn-rectangle"
+                class="w-full items-center px-3 py-4 text-sm md:text-xl font-bold text-center text-white bg-[#1090D8] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+              >
+                Calculate
+              </button>
+            </div>
+            <!-- card-button-end -->
+          </div>
+          <!-- rectangle-end -->
+
+          <!-- parallelogram-start -->
+          <div
+            id=""
+            class="card-item text-center bg-white border border-[#1111111A] rounded-lg mx-auto py-6 px-5 order-3"
+          >
+            <img
+              class="mx-auto max-w-full h-48"
+              src="./assets/images/parallelogram.png"
+              alt=""
+            />
+
+            <h5
+              id="parallelogram-shape"
+              class="mt-3 md:mt-6 text-2xl font-bold tracking-tight text-[#414141]"
+            >
+              Parallelogram
+            </h5>
+
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Area (A) = b x h
+            </p>
+            <!-- card-calculation-start -->
+            <div class="card-calculation space-y-6 px-3">
+              <div class="data-input flex justify-between mt-2 md:mt-4">
+                <div class="inline-flex items-center">
+                  <input
+                    type="text"
+                    name=""
+                    id="parallelogram-base"
+                    placeholder="b"
+                    class="rounded border border-transparent bg-[#F1F1F1] placeholder-[#414141] mx-2 w-full"
+                  />cm
+                </div>
+                <div class="inline-flex items-center">
+                  <input
+                    type="text"
+                    name=""
+                    id="parallelogram-height"
+                    placeholder="h"
+                    class="rounded border border-transparent bg-[#F1F1F1] placeholder-[#414141] mx-2 w-full"
+                  />cm
+                </div>
+              </div>
+            </div>
+            <!-- card-calculation-end -->
+            <!-- card-button-start -->
+            <div class="flex justify-center items-center mt-3 md:mt-8">
+              <button
+                id="btn-parallelogram"
+                class="w-full items-center px-3 py-4 text-sm md:text-xl font-bold text-center text-white bg-[#1090D8] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+              >
+                Calculate
+              </button>
+            </div>
+            <!-- card-button-end -->
+          </div>
+          <!-- parallelogram-end -->
+
+          <!-- total-start -->
+          <div
+            id="total"
+            class="text-center bg-white border border-[#1111111A] rounded-lg py-6 px-3 order-last md:order-4 md:col-span-2 md:row-span-2"
+          >
+            <h5
+              class="mt-3 md:mt-6 text-2xl font-bold tracking-tight text-[#414141] underline"
+            >
+              Aria Calculation
+            </h5>
+            <!-- total-result-presentation-start -->
+            <div id="card-calculation" class="grid grid-cols-1"></div>
+          </div>
+          <!-- total-end -->
+
+          <!-- rhombus-start -->
+          <div
+            id="rhombus"
+            class="card-item text-center bg-white border border-[#1111111A] rounded-lg mx-auto py-6 px-5 order-5"
+          >
+            <img
+              class="mx-auto max-w-full h-48"
+              src="./assets/images/rhombus.png"
+              alt=""
+            />
+
+            <h5
+              id="rhombus-shape"
+              class="mt-3 md:mt-6 text-2xl font-bold tracking-tight text-[#414141]"
+            >
+              Rhombus
+            </h5>
+
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub>
+            </p>
+            <!-- card-calculation-start -->
+            <div class="card-calculation space-y-6 px-3">
+              <div class="data-input flex justify-between mt-2 md:mt-4">
+                <div class="inline-flex items-center">
+                  <input
+                    type="text"
+                    name=""
+                    id="rhombus-diagonal-left"
+                    placeholder="d1"
+                    class="rounded border border-transparent bg-[#F1F1F1] placeholder-[#414141] mx-2 w-full"
+                  />cm
+                </div>
+                <div class="inline-flex items-center">
+                  <input
+                    type="text"
+                    name=""
+                    id="rhombus-diagonal-right"
+                    placeholder="d2"
+                    class="rounded border border-transparent bg-[#F1F1F1] placeholder-[#414141] mx-2 w-full"
+                  />cm
+                </div>
+              </div>
+            </div>
+            <!-- card-calculation-end -->
+            <!-- card-button-start -->
+            <div class="flex justify-center items-center mt-3 md:mt-8">
+              <button
+                id="btn-rhombus"
+                class="w-full items-center px-3 py-4 text-sm md:text-xl font-bold text-center text-white bg-[#1090D8] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+              >
+                Calculate
+              </button>
+            </div>
+            <!-- card-button-end -->
+          </div>
+          <!-- rhombus-end -->
+          <!-- pentagon-start -->
+          <div
+            id=""
+            class="card-item text-center bg-white border border-[#1111111A] rounded-lg mx-auto py-6 px-5 order-6"
+          >
+            <img
+              class="mx-auto max-w-full h-48"
+              src="./assets/images/pentagon.png"
+              alt=""
+            />
+
+            <h5
+              id="pentagon-shape"
+              class="mt-3 md:mt-6 text-2xl font-bold tracking-tight text-[#414141]"
+            >
+              Pentagon
+            </h5>
+
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Area (A) = 0.5 x p x b
+            </p>
+            <!-- card-calculation-start -->
+            <div class="card-calculation space-y-6 px-3">
+              <div class="data-input flex justify-between mt-2 md:mt-4">
+                <div class="inline-flex items-center">
+                  <input
+                    type="text"
+                    name=""
+                    id="pentagon-input"
+                    placeholder="p"
+                    class="rounded border border-transparent bg-[#F1F1F1] placeholder-[#414141] mx-2 w-full"
+                  />cm
+                </div>
+                <div class="inline-flex items-center">
+                  <input
+                    type="text"
+                    name=""
+                    id="apothem-input"
+                    placeholder="b"
+                    class="rounded border border-transparent bg-[#F1F1F1] placeholder-[#414141] mx-2 w-full"
+                  />cm
+                </div>
+              </div>
+            </div>
+            <!-- card-calculation-end -->
+            <!-- card-button-start -->
+            <div class="flex justify-center items-center mt-3 md:mt-8">
+              <button
+                id="btn-pentagon"
+                class="w-full items-center px-3 py-4 text-sm md:text-xl font-bold text-center text-white bg-[#1090D8] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+              >
+                Calculate
+              </button>
+            </div>
+            <!-- card-button-end -->
+          </div>
+          <!-- pentagon-end -->
+          <!-- ellipse-start -->
+          <div
+            id=""
+            class="card-item text-center bg-white border border-[#1111111A] rounded-lg mx-auto py-6 px-5 order-7"
+          >
+            <img
+              class="mx-auto max-w-full h-48"
+              src="./assets/images/ellipse.png"
+              alt=""
+            />
+
+            <h5
+              id="ellipse-shape"
+              class="mt-3 md:mt-6 text-2xl font-bold tracking-tight text-[#414141]"
+            >
+              Ellipse
+            </h5>
+
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Area (A) = πab
+            </p>
+            <!-- card-calculation-start -->
+            <div class="card-calculation space-y-6 px-3">
+              <div class="data-input flex justify-between mt-2 md:mt-4">
+                <div class="inline-flex items-center">
+                  <input
+                    type="text"
+                    name=""
+                    id="semi-major"
+                    placeholder="a"
+                    class="rounded border border-transparent bg-[#F1F1F1] placeholder-[#414141] mx-2 w-full"
+                  />cm
+                </div>
+                <div class="inline-flex items-center">
+                  <input
+                    type="text"
+                    name=""
+                    id="semi-minor"
+                    placeholder="b"
+                    class="rounded border border-transparent bg-[#F1F1F1] placeholder-[#414141] mx-2 w-full"
+                  />cm
+                </div>
+              </div>
+            </div>
+            <!-- card-calculation-end -->
+            <!-- card-button-start -->
+            <div class="flex justify-center items-center mt-3 md:mt-8">
+              <button
+                id="btn-ellipse"
+                class="w-full items-center px-3 py-4 text-sm md:text-xl font-bold text-center text-white bg-[#1090D8] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+              >
+                Calculate
+              </button>
+            </div>
+            <!-- card-button-end -->
+          </div>
+          <!-- ellipse-end -->
+        </div>
+        <!-- card-items-end -->
+      </div>
+      <!-- container-end -->
+    </main>
+    <!-- main-content-end -->
+
+    <!-- Flowbite JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+    <!-- custom JS -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/card.js"></script>
+  </body>
+  <!-- body-end -->
+</html>
